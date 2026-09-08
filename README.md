@@ -492,19 +492,5 @@ points:
 | A generative ground truth nobody trusts | Shapley attribution by counterfactual silencing as the behavioural ground truth; sentinels graded on it |
 | A ranking that hides a cost judgement | cost frontier over the declared weight on false alerts and false halts |
 
-## Honest limitations
-
-Synthetic markets stylise real microstructure, and the jurisdiction rules
-are stylised after public mechanisms with durations in simulation steps, not
-calibrated to any venue. The conformal guarantee covers exchangeable quiet
-scenarios, not a different population. Offline persona tables are documented
-synthetic surrogates, not claims about any real model. All outputs are
-comparative rankings of tools and rules on the battery run. Sentinel and rule thresholds
-are calibrated on the demonstration families; the held out and adversarial
-rows show where that calibration does not carry, and the briefing says so.
-The targeted rules use flags observed on the untreated path (no lookahead in
-time, but the sentinel does not re observe the treated market). A single
-active run per server is by design; viewers are unlimited.
-
 See `REVIEW.md` for the audit of the hackathon build, `CHANGELOG.md` for
 every change, and `docs/` for deployment, security and validation notes.
