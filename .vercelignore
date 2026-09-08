@@ -1,8 +1,0 @@
-sample_outputs/
-docs/
-tests/
-runs/
-deploy/
-*.zip
-*.mp4
-__pycache__/

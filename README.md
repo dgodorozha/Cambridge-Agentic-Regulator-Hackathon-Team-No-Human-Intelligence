@@ -6,7 +6,6 @@
 |---|---|
 | **Live prototype** | https://hsl-terminal.onrender.com |
 | **Source code (GitHub)** | https://github.com/dgodorozha/Cambridge-Agentic-Regulator-Hackathon-Team-No-Human-Intelligence |
-| **Interface only (Vercel)** | https://cambridge-agentic-regulator-hackath.vercel.app (serverless: the pages load, but a run does not survive across function instances; use the Render address to run a battery) |
 | **Full manual** | `docs/MANUAL.md` |
 | **Long form project description** | `docs/OVERVIEW.md` |
 | **Referenced works** | `REFERENCES.md` |
@@ -68,7 +67,6 @@ python3 figures.py runs/cli    # figures from the run
 
 - `Dockerfile` runs the terminal under gunicorn as one long lived process, which a run needs (the battery is a background computation polled by the page). `deploy/docker-compose.yml` adds nginx.
 - `render.yaml` is a one click Render blueprint: connect the repository, and Render builds the image, generates `HSL_SECRET` and redeploys on every push. This is how the live prototype above is hosted (Standard instance).
-- `vercel.json` with `api/index.py` deploys the same Flask server to Vercel serverless. The interface works there, but a run lives in one function instance and is lost on a cold start, so Vercel is for showing the pages, not for certifying a tool.
 
 `DEPLOY.md` and `docs/DEPLOYMENT.md` cover each option.
 
