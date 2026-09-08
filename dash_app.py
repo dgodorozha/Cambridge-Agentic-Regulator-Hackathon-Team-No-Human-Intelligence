@@ -28,6 +28,8 @@ import os
 import json
 import re
 import threading
+import sys
+sys.setswitchinterval(0.0005)
 import time
 from collections import defaultdict, deque
 
