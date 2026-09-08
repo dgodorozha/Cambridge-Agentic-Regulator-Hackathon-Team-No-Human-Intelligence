@@ -870,8 +870,8 @@ FRONT_INDEX = [
 ]
 
 app.layout = html.Div([
-    dcc.Interval(id="iv-fast", interval=500),
-    dcc.Interval(id="iv-slow", interval=1000),
+    dcc.Interval(id="iv-fast", interval=1500),
+    dcc.Interval(id="iv-slow", interval=3000),
     dcc.Store(id="cursor", data={"seq": 0, "three": False}),
     dcc.Store(id="sink4"),
     dcc.Store(id="rev-store", data=-1),
