@@ -1,0 +1,3 @@
+{"name": "mm_withdrawal_market", "note": "a strong herd with AI liquidity providers at 12% that withdraw in stress", "seeds": 2,
+ "vendor_shares": [0.30, 0.15], "vendor_rhos": [0.85, 0.30], "shock_size": 0.05,
+ "custom_agents": [{"agent": "ai_liquidity_provider", "share": 0.12}]}

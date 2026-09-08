@@ -1,0 +1,32 @@
+{
+ "preparer": "D. Godorozha",
+ "preparer_role": "",
+ "gate1": {
+  "actor": "R. Ahmed",
+  "role": "SMF24 Chief Operations",
+  "ts": "2026-09-07T16:08:28+00:00",
+  "register": {
+   "name": "Rajib Ahmed",
+   "irn": "RXA01234",
+   "firm": "Demonstration Authority",
+   "function": "SMF24 Chief Operations",
+   "source": "Authority HR register; FCA Financial Services Register checked 2026-09-01",
+   "checked_at": "2026-09-07T16:08:28+00:00",
+   "note": ""
+  }
+ },
+ "gate2": {
+  "actor": "R. Ahmed",
+  "role": "SMF24 Chief Operations",
+  "register": {
+   "name": "Rajib Ahmed",
+   "irn": "RXA01234",
+   "firm": "Demonstration Authority",
+   "function": "SMF24 Chief Operations",
+   "source": "Authority HR register; FCA Financial Services Register checked 2026-09-01",
+   "checked_at": "2026-09-07T16:08:28+00:00",
+   "note": ""
+  },
+  "ts": "2026-09-07T16:12:14+00:00"
+ }
+}

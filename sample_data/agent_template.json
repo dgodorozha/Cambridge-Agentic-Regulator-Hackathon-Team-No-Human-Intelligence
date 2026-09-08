@@ -1,0 +1,22 @@
+{
+ "name": "my_agent",
+ "note": "describe the strategy and why it matters",
+ "terms": {
+  "momentum": 1.0,
+  "crowd": 0.5,
+  "mispricing": -0.2
+ },
+ "noise": 0.5,
+ "cap": 3.0,
+ "threshold": 0.0,
+ "lag": 0,
+ "withdraw_if_vol_above": null,
+ "active_from": null,
+ "active_until": null,
+ "burst": {
+  "start": null,
+  "len": 0,
+  "size": 0.0
+ },
+ "destabilising": "auto"
+}

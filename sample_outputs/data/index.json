@@ -1,0 +1,11 @@
+[
+ {
+  "file": "bf47b2157e7df1fd_labelled_flows.csv",
+  "name": "labelled_flows.csv",
+  "classification": "public",
+  "packable": true,
+  "sha256": "bf47b2157e7df1fd360d2e825c3e0ff1393b7182a691699f1453f4809d7c9fbf",
+  "n_rows": 3600,
+  "source": "upload"
+ }
+]

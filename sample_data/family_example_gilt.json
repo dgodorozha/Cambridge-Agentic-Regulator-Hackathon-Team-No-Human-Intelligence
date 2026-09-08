@@ -1,0 +1,2 @@
+{"name": "gilt_vendor_split", "note": "two vendors as observed in the gilt repo market, faulty model at 320", "seeds": 2,
+ "vendor_shares": [0.30, 0.20], "vendor_rhos": [0.85, 0.60], "shock_size": 0.04, "vendor_fault_time": 320, "vendor_fault_len": 30}

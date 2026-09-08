@@ -1,0 +1,143 @@
+{
+ "schema": "hsl.exchange/1",
+ "run_id": "20260907-160809-0939",
+ "authority": "",
+ "hsl_version": "3.9.2",
+ "battery_hash": "4bf2b1c1e6282df0f948d4f8068df5d6e35e6bfb786d0d10ab4677568f591565",
+ "indicators": {
+  "adoption": {
+   "ai_agent_share_mean": 0.4749999999999999,
+   "ai_agent_share_max": 0.7,
+   "families_in_battery": [
+    "calibrated_bf47b2",
+    "empirical",
+    "evader",
+    "herd_high",
+    "herd_low",
+    "herd_mid",
+    "holdout_herd",
+    "holdout_quiet",
+    "hybrid_bf47b2",
+    "ignition",
+    "liquidity_withdrawal",
+    "misinformation",
+    "mixed",
+    "persona_llm",
+    "question",
+    "quiet",
+    "rl_emergent",
+    "vendor_fault"
+   ],
+   "note": "share of agents driven by an AI vendor signal, an RL policy or an LLM persona; the sandbox analogue of the adoption share indicator"
+  },
+  "third_party_concentration": {
+   "vendor_hhi_mean": 0.12624077777777779,
+   "vendor_hhi_max": 0.248042,
+   "top_vendor_share_max": 0.4,
+   "n_vendors_typical": 2,
+   "substitutability_proxy": 0.6,
+   "dislocation_threshold_share": 0.3,
+   "response_convex": true,
+   "note": "Herfindahl index and top share of the vendor split; the dose response gives the share at which dislocations become the likelier outcome"
+  },
+  "correlation_and_herding": {
+   "herd_pre_shock_vol_ratio": 2.2282021718240665,
+   "herd_post_shock_dd": 0.18439231138729043,
+   "quiet_post_shock_dd": 0.06707654859515887,
+   "rl_emergent_policy_convergence": 0.7427461270838841,
+   "rl_emergent_momentum_slope": 0.20919248981616279,
+   "note": "correlated positioning as the herd's volatility and drawdown against the same shock in a quiet market; emergent convergence of independently trained policies"
+  },
+  "input_output_sensitivity": {
+   "persona_max_action_jump": 1.5,
+   "note": "largest change of a persona's action for a one bucket change of the market state (IOSCO 2026: erratic output to small input changes)"
+  },
+  "incidents": {
+   "dislocation_probability_untreated": 0.5555555555555556,
+   "expected_shortfall_untreated": 0.31019849194990595,
+   "value_at_risk_untreated": 0.1832944573062736,
+   "note": "frequency and severity of dislocations across the herding scenarios"
+  },
+  "model_performance": {
+   "decision_f1": {
+    "naive_threshold": 0.24886183775072665,
+    "corr_clustering": 0.3354361541697014,
+    "network_sentinel": 0.40501530004323116,
+    "absorption_ratio": 0.5680654372430818,
+    "imbalance": 0.42287510508258375,
+    "endogeneity": 0.29816281647248377,
+    "lead_lag": 0.4051696135239199,
+    "tail_dependence": 0.684368804455038
+   },
+   "held_out_drift": {
+    "naive_threshold": 0.1254500888547779,
+    "corr_clustering": 0.18211605094196515,
+    "network_sentinel": 0.3290272531482582,
+    "absorption_ratio": 0.16598643227178544,
+    "imbalance": 0.1411606548152452,
+    "endogeneity": 0.17818190668243095,
+    "lead_lag": 0.4036794036433612,
+    "tail_dependence": 0.23888236143436903
+   },
+   "false_alert_rate": {
+    "naive_threshold": 0.0,
+    "corr_clustering": 0.0,
+    "network_sentinel": 0.125,
+    "absorption_ratio": 0.375,
+    "imbalance": 0.0,
+    "endogeneity": 0.125,
+    "lead_lag": 0.0,
+    "tail_dependence": 0.25
+   },
+   "note": "held out drift is the change of decision F1 from the calibration to the held out population, the sandbox analogue of model drift monitoring"
+  },
+  "data_gaps": [
+   "proportion of supervised firms using AI, by use case and production status (survey or reporting)",
+   "AI research and development spending and patents (firm reporting)",
+   "AI inventories with model type, provider and dependencies (firm reporting; the ATRS record covers HSL itself)",
+   "incident frequency and severity in production AI systems (incident reporting)",
+   "direct and indirect third party dependencies across firms, including cloud (firm reporting; the sandbox measures the consequence of concentration, not its level in the market)"
+  ]
+ },
+ "certified_sentinel": "tail_dependence",
+ "decision_gap": 0.6785714285714286,
+ "p_inversion": 0.8975,
+ "recommended_rule": {
+  "rule": "static_circuit_breaker",
+  "label": "Market wide circuit breaker",
+  "tier": 4,
+  "tier_label": "market wide halt",
+  "instrument": "command and control",
+  "legal_basis": "MiFID II Art 48(5); RTS 7"
+ },
+ "rule_oversight": {
+  "static_circuit_breaker": "human_on_the_loop",
+  "dynamic_throttle": "human_in_the_loop",
+  "kill_switch": "human_in_the_loop",
+  "luld_style_band": "human_out_of_the_loop",
+  "market_wide_breaker": "human_on_the_loop",
+  "venue_volatility_halt": "human_on_the_loop",
+  "responsive_ladder": "human_on_the_loop",
+  "learned_policy": "human_in_control"
+ },
+ "needs_coverage": {
+  "N1": "partial",
+  "N2": "answered",
+  "N3": "answered",
+  "N4": "answered",
+  "N5": "answered",
+  "N6": "answered",
+  "N7": "answered",
+  "N8": "answered",
+  "N9": "answered",
+  "N10": "answered",
+  "N11": "answered",
+  "N12": "partial",
+  "N13": "answered",
+  "N14": "answered",
+  "N15": "answered"
+ },
+ "data_classifications": [
+  "public"
+ ]
+}

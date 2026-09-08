@@ -1,0 +1,4050 @@
+{
+ "naive_threshold": {
+  "scores": [
+   {
+    "scenario": "herd_high_0",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.4176296491539664
+   },
+   {
+    "scenario": "herd_high_1",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.6371608972414133
+   },
+   {
+    "scenario": "herd_high_2",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.652403701592014
+   },
+   {
+    "scenario": "herd_mid_0",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.5123836578957823
+   },
+   {
+    "scenario": "herd_mid_1",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.42618773435939494
+   },
+   {
+    "scenario": "herd_mid_2",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.2587324698497124
+   },
+   {
+    "scenario": "herd_low_0",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.3307144911324997
+   },
+   {
+    "scenario": "herd_low_1",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.20293631927009861
+   },
+   {
+    "scenario": "herd_low_2",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.21663937702512
+   },
+   {
+    "scenario": "mixed_0",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.243897974260655
+   },
+   {
+    "scenario": "mixed_1",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.3648716288642603
+   },
+   {
+    "scenario": "mixed_2",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.22365502312179786
+   },
+   {
+    "scenario": "rl_emergent_0",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 1.0
+   },
+   {
+    "scenario": "rl_emergent_1",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.6373151639765785
+   },
+   {
+    "scenario": "rl_emergent_2",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.6579905030422131
+   },
+   {
+    "scenario": "evader_0",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.6219976978751782
+   },
+   {
+    "scenario": "evader_1",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.3879699041210937
+   },
+   {
+    "scenario": "evader_2",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.5683125914678284
+   },
+   {
+    "scenario": "ignition_0",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.29670052000577296
+   },
+   {
+    "scenario": "ignition_1",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.4823865984995872
+   },
+   {
+    "scenario": "ignition_2",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.35668017059782375
+   },
+   {
+    "scenario": "persona_llm_0",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.18175687804557167
+   },
+   {
+    "scenario": "persona_llm_1",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.20858588901112834
+   },
+   {
+    "scenario": "persona_llm_2",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.0
+   },
+   {
+    "scenario": "vendor_fault_0",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.2107624350684718
+   },
+   {
+    "scenario": "liquidity_withdrawal_0",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.4009833888313261
+   },
+   {
+    "scenario": "misinformation_0",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.4203278879837187
+   },
+   {
+    "scenario": "vendor_fault_1",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.238512291188105
+   },
+   {
+    "scenario": "liquidity_withdrawal_1",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.332653645538378
+   },
+   {
+    "scenario": "misinformation_1",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.35434031154644074
+   },
+   {
+    "scenario": "quiet_0",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.12915053218191985
+   },
+   {
+    "scenario": "quiet_1",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.17259999750339863
+   },
+   {
+    "scenario": "quiet_2",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2816082648699006
+   },
+   {
+    "scenario": "quiet_3",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2355281274906009
+   },
+   {
+    "scenario": "quiet_4",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.24030436302997227
+   },
+   {
+    "scenario": "quiet_5",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.21132055711259048
+   },
+   {
+    "scenario": "quiet_6",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2141296367984128
+   },
+   {
+    "scenario": "quiet_7",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.3794216188510345
+   },
+   {
+    "scenario": "calibrated_bf47b2_0",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.28955562503552523
+   },
+   {
+    "scenario": "calibrated_bf47b2_1",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.3557534163460516
+   },
+   {
+    "scenario": "hybrid_bf47b2_0",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.20772513578231447
+   },
+   {
+    "scenario": "hybrid_bf47b2_1",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.25106805861506853
+   },
+   {
+    "scenario": "question_0",
+    "quiet": false,
+    "family": "question",
+    "s": 0.14887374691063737
+   },
+   {
+    "scenario": "question_1",
+    "quiet": false,
+    "family": "question",
+    "s": 0.4570690361729929
+   }
+  ],
+  "t_lo": 0.0,
+  "t_hi": 0.3794216188510345,
+  "clear": 0.0,
+  "throttle": 0.0,
+  "thr_tail": 0.3409090909090909,
+  "breadth": 0.0,
+  "lift": 0.5633802816901406,
+  "lift_bar": 1.25,
+  "throttle_ok": false,
+  "separable": false,
+  "loo": {
+   "backed": 0.022727272727272728,
+   "claims": 1,
+   "claim_rate": 0.022727272727272728,
+   "claim_rate_of_backed": 1.0,
+   "decisions": [
+    {
+     "scenario": "herd_high_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_2",
+     "decision": "auto_clear",
+     "claim": true
+    },
+    {
+     "scenario": "vendor_fault_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_3",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_4",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_5",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_6",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_7",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_1",
+     "decision": "escalate",
+     "claim": false
+    }
+   ]
+  }
+ },
+ "corr_clustering": {
+  "scores": [
+   {
+    "scenario": "herd_high_0",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.9399504196568366
+   },
+   {
+    "scenario": "herd_high_1",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.9991507163780586
+   },
+   {
+    "scenario": "herd_high_2",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 1.0
+   },
+   {
+    "scenario": "herd_mid_0",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.6617555372387829
+   },
+   {
+    "scenario": "herd_mid_1",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.7154028887831547
+   },
+   {
+    "scenario": "herd_mid_2",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.6139015614905199
+   },
+   {
+    "scenario": "herd_low_0",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.3832655562829668
+   },
+   {
+    "scenario": "herd_low_1",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.36661892633069537
+   },
+   {
+    "scenario": "herd_low_2",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.3655403110440197
+   },
+   {
+    "scenario": "mixed_0",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5134445287799635
+   },
+   {
+    "scenario": "mixed_1",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5274481842930658
+   },
+   {
+    "scenario": "mixed_2",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5319037397658705
+   },
+   {
+    "scenario": "rl_emergent_0",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.3726426739034661
+   },
+   {
+    "scenario": "rl_emergent_1",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.5700489626126286
+   },
+   {
+    "scenario": "rl_emergent_2",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.5675680618721446
+   },
+   {
+    "scenario": "evader_0",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.4218972803000216
+   },
+   {
+    "scenario": "evader_1",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.41789531551274917
+   },
+   {
+    "scenario": "evader_2",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.4193828361650521
+   },
+   {
+    "scenario": "ignition_0",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.3729432185603712
+   },
+   {
+    "scenario": "ignition_1",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.3456602080921509
+   },
+   {
+    "scenario": "ignition_2",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.3583435989123718
+   },
+   {
+    "scenario": "persona_llm_0",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.840839815131479
+   },
+   {
+    "scenario": "persona_llm_1",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.7487880918248824
+   },
+   {
+    "scenario": "persona_llm_2",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.0
+   },
+   {
+    "scenario": "vendor_fault_0",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.6049888186906932
+   },
+   {
+    "scenario": "liquidity_withdrawal_0",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.77794825857119
+   },
+   {
+    "scenario": "misinformation_0",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.8493443593115351
+   },
+   {
+    "scenario": "vendor_fault_1",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.6533179701117166
+   },
+   {
+    "scenario": "liquidity_withdrawal_1",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.8379519440332143
+   },
+   {
+    "scenario": "misinformation_1",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.7505195548232414
+   },
+   {
+    "scenario": "quiet_0",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.317237098857188
+   },
+   {
+    "scenario": "quiet_1",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.3038894723641435
+   },
+   {
+    "scenario": "quiet_2",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.3241253177908539
+   },
+   {
+    "scenario": "quiet_3",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.28437890282671163
+   },
+   {
+    "scenario": "quiet_4",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.3036872924001222
+   },
+   {
+    "scenario": "quiet_5",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.26648551568621337
+   },
+   {
+    "scenario": "quiet_6",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2906553688076931
+   },
+   {
+    "scenario": "quiet_7",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2304577381643954
+   },
+   {
+    "scenario": "calibrated_bf47b2_0",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.5746837021274217
+   },
+   {
+    "scenario": "calibrated_bf47b2_1",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.673895561901185
+   },
+   {
+    "scenario": "hybrid_bf47b2_0",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.5625773126144032
+   },
+   {
+    "scenario": "hybrid_bf47b2_1",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.548088382279496
+   },
+   {
+    "scenario": "question_0",
+    "quiet": false,
+    "family": "question",
+    "s": 0.8513114255021129
+   },
+   {
+    "scenario": "question_1",
+    "quiet": false,
+    "family": "question",
+    "s": 0.8508666325099923
+   }
+  ],
+  "t_lo": 0.0,
+  "t_hi": 0.3241253177908539,
+  "clear": 0.0,
+  "throttle": 0.0,
+  "thr_tail": 0.7954545454545454,
+  "breadth": 0.0,
+  "lift": 1.003629419422113,
+  "lift_bar": 1.25,
+  "throttle_ok": false,
+  "separable": false,
+  "loo": {
+   "backed": 0.022727272727272728,
+   "claims": 1,
+   "claim_rate": 0.022727272727272728,
+   "claim_rate_of_backed": 1.0,
+   "decisions": [
+    {
+     "scenario": "herd_high_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_2",
+     "decision": "auto_clear",
+     "claim": true
+    },
+    {
+     "scenario": "vendor_fault_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_3",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_4",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_5",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_6",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_7",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_1",
+     "decision": "escalate",
+     "claim": false
+    }
+   ]
+  }
+ },
+ "network_sentinel": {
+  "scores": [
+   {
+    "scenario": "herd_high_0",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.8608264138428282
+   },
+   {
+    "scenario": "herd_high_1",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.9810098186363424
+   },
+   {
+    "scenario": "herd_high_2",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 1.0
+   },
+   {
+    "scenario": "herd_mid_0",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.6789224516597444
+   },
+   {
+    "scenario": "herd_mid_1",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.6639735775316222
+   },
+   {
+    "scenario": "herd_mid_2",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.6557612740176081
+   },
+   {
+    "scenario": "herd_low_0",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.45694535953708715
+   },
+   {
+    "scenario": "herd_low_1",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.23929538774773076
+   },
+   {
+    "scenario": "herd_low_2",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.32700460843507534
+   },
+   {
+    "scenario": "mixed_0",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5539450398780781
+   },
+   {
+    "scenario": "mixed_1",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5943855585371118
+   },
+   {
+    "scenario": "mixed_2",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.6238315292589611
+   },
+   {
+    "scenario": "rl_emergent_0",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.3421793616580414
+   },
+   {
+    "scenario": "rl_emergent_1",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.36475756248760177
+   },
+   {
+    "scenario": "rl_emergent_2",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.32608822720320696
+   },
+   {
+    "scenario": "evader_0",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.47295154048440274
+   },
+   {
+    "scenario": "evader_1",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.4634567933490981
+   },
+   {
+    "scenario": "evader_2",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.426178615223607
+   },
+   {
+    "scenario": "ignition_0",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.43412913990645613
+   },
+   {
+    "scenario": "ignition_1",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.23217609353736188
+   },
+   {
+    "scenario": "ignition_2",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.2574269834571883
+   },
+   {
+    "scenario": "persona_llm_0",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.5259999785542142
+   },
+   {
+    "scenario": "persona_llm_1",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.6057520035574823
+   },
+   {
+    "scenario": "persona_llm_2",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.0
+   },
+   {
+    "scenario": "vendor_fault_0",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.6079267584041851
+   },
+   {
+    "scenario": "liquidity_withdrawal_0",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.7932415187829088
+   },
+   {
+    "scenario": "misinformation_0",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.7598551611695095
+   },
+   {
+    "scenario": "vendor_fault_1",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.7270835995695022
+   },
+   {
+    "scenario": "liquidity_withdrawal_1",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.7159710273941191
+   },
+   {
+    "scenario": "misinformation_1",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.8125466739393855
+   },
+   {
+    "scenario": "quiet_0",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.21719487744747876
+   },
+   {
+    "scenario": "quiet_1",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.20113604056854678
+   },
+   {
+    "scenario": "quiet_2",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.23098216411419517
+   },
+   {
+    "scenario": "quiet_3",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.18014160094431098
+   },
+   {
+    "scenario": "quiet_4",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.1988574674231343
+   },
+   {
+    "scenario": "quiet_5",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.17002441044260766
+   },
+   {
+    "scenario": "quiet_6",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2012999115778688
+   },
+   {
+    "scenario": "quiet_7",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.13741434160720878
+   },
+   {
+    "scenario": "calibrated_bf47b2_0",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.4013907381325452
+   },
+   {
+    "scenario": "calibrated_bf47b2_1",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.45365639860188184
+   },
+   {
+    "scenario": "hybrid_bf47b2_0",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.3958784018967736
+   },
+   {
+    "scenario": "hybrid_bf47b2_1",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.38660468202002546
+   },
+   {
+    "scenario": "question_0",
+    "quiet": false,
+    "family": "question",
+    "s": 0.7931072685944099
+   },
+   {
+    "scenario": "question_1",
+    "quiet": false,
+    "family": "question",
+    "s": 0.7580883875583944
+   }
+  ],
+  "t_lo": 0.0,
+  "t_hi": 0.23098216411419517,
+  "clear": 0.0,
+  "throttle": 0.0,
+  "thr_tail": 0.7954545454545454,
+  "breadth": 0.0,
+  "lift": 1.082205223050293,
+  "lift_bar": 1.25,
+  "throttle_ok": false,
+  "separable": false,
+  "loo": {
+   "backed": 0.022727272727272728,
+   "claims": 1,
+   "claim_rate": 0.022727272727272728,
+   "claim_rate_of_backed": 1.0,
+   "decisions": [
+    {
+     "scenario": "herd_high_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_2",
+     "decision": "auto_clear",
+     "claim": true
+    },
+    {
+     "scenario": "vendor_fault_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_3",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_4",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_5",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_6",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_7",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_1",
+     "decision": "escalate",
+     "claim": false
+    }
+   ]
+  }
+ },
+ "absorption_ratio": {
+  "scores": [
+   {
+    "scenario": "herd_high_0",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.9557379242071228
+   },
+   {
+    "scenario": "herd_high_1",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.9772598622429445
+   },
+   {
+    "scenario": "herd_high_2",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 1.0
+   },
+   {
+    "scenario": "herd_mid_0",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.715729626177238
+   },
+   {
+    "scenario": "herd_mid_1",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.7467856400466193
+   },
+   {
+    "scenario": "herd_mid_2",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.6643571696699107
+   },
+   {
+    "scenario": "herd_low_0",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.4195001480130894
+   },
+   {
+    "scenario": "herd_low_1",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.3420809862249388
+   },
+   {
+    "scenario": "herd_low_2",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.35960785587451943
+   },
+   {
+    "scenario": "mixed_0",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5123750007976512
+   },
+   {
+    "scenario": "mixed_1",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5779099393526372
+   },
+   {
+    "scenario": "mixed_2",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.627258696253849
+   },
+   {
+    "scenario": "rl_emergent_0",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.4424546947068523
+   },
+   {
+    "scenario": "rl_emergent_1",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.5042133323555439
+   },
+   {
+    "scenario": "rl_emergent_2",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.5050672978393542
+   },
+   {
+    "scenario": "evader_0",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.5319529940429771
+   },
+   {
+    "scenario": "evader_1",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.5200081895960412
+   },
+   {
+    "scenario": "evader_2",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.49460608312856547
+   },
+   {
+    "scenario": "ignition_0",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.3994934680810716
+   },
+   {
+    "scenario": "ignition_1",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.36251594497200124
+   },
+   {
+    "scenario": "ignition_2",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.32014595863973416
+   },
+   {
+    "scenario": "persona_llm_0",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.788164824806292
+   },
+   {
+    "scenario": "persona_llm_1",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.7409510538939886
+   },
+   {
+    "scenario": "persona_llm_2",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.0
+   },
+   {
+    "scenario": "vendor_fault_0",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.6324140737081383
+   },
+   {
+    "scenario": "liquidity_withdrawal_0",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.8161988776589936
+   },
+   {
+    "scenario": "misinformation_0",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.875344011620741
+   },
+   {
+    "scenario": "vendor_fault_1",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.7125456627867041
+   },
+   {
+    "scenario": "liquidity_withdrawal_1",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.8774893340584125
+   },
+   {
+    "scenario": "misinformation_1",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.8086507182347429
+   },
+   {
+    "scenario": "quiet_0",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.345345896099576
+   },
+   {
+    "scenario": "quiet_1",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.3160553667780522
+   },
+   {
+    "scenario": "quiet_2",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.38226310758295523
+   },
+   {
+    "scenario": "quiet_3",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.27331090218328985
+   },
+   {
+    "scenario": "quiet_4",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.33423499442605015
+   },
+   {
+    "scenario": "quiet_5",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.22012199669081658
+   },
+   {
+    "scenario": "quiet_6",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.30733058834635163
+   },
+   {
+    "scenario": "quiet_7",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.17855897062566953
+   },
+   {
+    "scenario": "calibrated_bf47b2_0",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.38429894585066543
+   },
+   {
+    "scenario": "calibrated_bf47b2_1",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.5409142267587083
+   },
+   {
+    "scenario": "hybrid_bf47b2_0",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.3864313328710792
+   },
+   {
+    "scenario": "hybrid_bf47b2_1",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.38209635863828845
+   },
+   {
+    "scenario": "question_0",
+    "quiet": false,
+    "family": "question",
+    "s": 0.7664391015324019
+   },
+   {
+    "scenario": "question_1",
+    "quiet": false,
+    "family": "question",
+    "s": 0.7252545116425738
+   }
+  ],
+  "t_lo": 0.0,
+  "t_hi": 0.38226310758295523,
+  "clear": 0.0,
+  "throttle": 0.6818181818181818,
+  "thr_tail": 0.6818181818181818,
+  "breadth": 0.6818181818181818,
+  "lift": 1.5026705525835033,
+  "lift_bar": 1.25,
+  "throttle_ok": true,
+  "separable": false,
+  "loo": {
+   "backed": 0.7272727272727273,
+   "claims": 2,
+   "claim_rate": 0.045454545454545456,
+   "claim_rate_of_backed": 0.0625,
+   "decisions": [
+    {
+     "scenario": "herd_high_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_2",
+     "decision": "auto_clear",
+     "claim": true
+    },
+    {
+     "scenario": "vendor_fault_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_2",
+     "decision": "auto_throttle",
+     "claim": true
+    },
+    {
+     "scenario": "quiet_3",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_4",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_5",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_6",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_7",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "question_1",
+     "decision": "auto_throttle",
+     "claim": false
+    }
+   ]
+  }
+ },
+ "imbalance": {
+  "scores": [
+   {
+    "scenario": "herd_high_0",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.874884151992586
+   },
+   {
+    "scenario": "herd_high_1",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.918134074760581
+   },
+   {
+    "scenario": "herd_high_2",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.8779734321903
+   },
+   {
+    "scenario": "herd_mid_0",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.3481618782823604
+   },
+   {
+    "scenario": "herd_mid_1",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.4504170528266914
+   },
+   {
+    "scenario": "herd_mid_2",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.35341365461847396
+   },
+   {
+    "scenario": "herd_low_0",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.19833178869323453
+   },
+   {
+    "scenario": "herd_low_1",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.07043558850787783
+   },
+   {
+    "scenario": "herd_low_2",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.09206054989187532
+   },
+   {
+    "scenario": "mixed_0",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.3249922767995058
+   },
+   {
+    "scenario": "mixed_1",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.33982082174853284
+   },
+   {
+    "scenario": "mixed_2",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.2570281124497992
+   },
+   {
+    "scenario": "rl_emergent_0",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.6030274945937597
+   },
+   {
+    "scenario": "rl_emergent_1",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.6478220574606118
+   },
+   {
+    "scenario": "rl_emergent_2",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.5396972505406242
+   },
+   {
+    "scenario": "evader_0",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.10874266295953046
+   },
+   {
+    "scenario": "evader_1",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.136546184738956
+   },
+   {
+    "scenario": "evader_2",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.16002471424158188
+   },
+   {
+    "scenario": "ignition_0",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.01760889712696947
+   },
+   {
+    "scenario": "ignition_1",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.10132839048501714
+   },
+   {
+    "scenario": "ignition_2",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.12604263206672853
+   },
+   {
+    "scenario": "persona_llm_0",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.7062094531974054
+   },
+   {
+    "scenario": "persona_llm_1",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.6240345999382149
+   },
+   {
+    "scenario": "persona_llm_2",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.03398208217485343
+   },
+   {
+    "scenario": "vendor_fault_0",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.37936360827927107
+   },
+   {
+    "scenario": "liquidity_withdrawal_0",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.6666666666666669
+   },
+   {
+    "scenario": "misinformation_0",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.6679023787457526
+   },
+   {
+    "scenario": "vendor_fault_1",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.4541241890639483
+   },
+   {
+    "scenario": "liquidity_withdrawal_1",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.6919987642879213
+   },
+   {
+    "scenario": "misinformation_1",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.5486561631139948
+   },
+   {
+    "scenario": "quiet_0",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.0
+   },
+   {
+    "scenario": "quiet_1",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.05490092237080195
+   },
+   {
+    "scenario": "quiet_2",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.11028730305838744
+   },
+   {
+    "scenario": "quiet_3",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.05684275563793653
+   },
+   {
+    "scenario": "quiet_4",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.08866234167438995
+   },
+   {
+    "scenario": "quiet_5",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.1350015446400989
+   },
+   {
+    "scenario": "quiet_6",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.055607043558850947
+   },
+   {
+    "scenario": "quiet_7",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.02533209762125444
+   },
+   {
+    "scenario": "calibrated_bf47b2_0",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.7333951189372877
+   },
+   {
+    "scenario": "calibrated_bf47b2_1",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.9459375965400063
+   },
+   {
+    "scenario": "hybrid_bf47b2_0",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.6357738646895275
+   },
+   {
+    "scenario": "hybrid_bf47b2_1",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.7111523015137476
+   },
+   {
+    "scenario": "question_0",
+    "quiet": false,
+    "family": "question",
+    "s": 0.8470806302131603
+   },
+   {
+    "scenario": "question_1",
+    "quiet": false,
+    "family": "question",
+    "s": 1.0
+   }
+  ],
+  "t_lo": 0.01760889712696947,
+  "t_hi": 0.1350015446400989,
+  "clear": 0.022727272727272728,
+  "throttle": 0.6590909090909091,
+  "thr_tail": 0.6590909090909091,
+  "breadth": 0.6818181818181818,
+  "lift": 1.4224967150280974,
+  "lift_bar": 1.25,
+  "throttle_ok": true,
+  "separable": false,
+  "loo": {
+   "backed": 0.7272727272727273,
+   "claims": 2,
+   "claim_rate": 0.045454545454545456,
+   "claim_rate_of_backed": 0.0625,
+   "decisions": [
+    {
+     "scenario": "herd_high_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_0",
+     "decision": "auto_clear",
+     "claim": true
+    },
+    {
+     "scenario": "ignition_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_0",
+     "decision": "auto_clear",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_3",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_4",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_5",
+     "decision": "auto_throttle",
+     "claim": true
+    },
+    {
+     "scenario": "quiet_6",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_7",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "question_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "question_1",
+     "decision": "auto_throttle",
+     "claim": false
+    }
+   ]
+  }
+ },
+ "endogeneity": {
+  "scores": [
+   {
+    "scenario": "herd_high_0",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.5981017820075978
+   },
+   {
+    "scenario": "herd_high_1",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 1.0
+   },
+   {
+    "scenario": "herd_high_2",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.7230220317299038
+   },
+   {
+    "scenario": "herd_mid_0",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.3484093577630863
+   },
+   {
+    "scenario": "herd_mid_1",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.8789094695263927
+   },
+   {
+    "scenario": "herd_mid_2",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.054765645581917134
+   },
+   {
+    "scenario": "herd_low_0",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 1.0
+   },
+   {
+    "scenario": "herd_low_1",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.33576421048069954
+   },
+   {
+    "scenario": "herd_low_2",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.22550994396368285
+   },
+   {
+    "scenario": "mixed_0",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.0
+   },
+   {
+    "scenario": "mixed_1",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.1777423401596254
+   },
+   {
+    "scenario": "mixed_2",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.7256662085967516
+   },
+   {
+    "scenario": "rl_emergent_0",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.516556279110736
+   },
+   {
+    "scenario": "rl_emergent_1",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.5245650682369297
+   },
+   {
+    "scenario": "rl_emergent_2",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.4990487605084577
+   },
+   {
+    "scenario": "evader_0",
+    "quiet": false,
+    "family": "evader",
+    "s": 1.0
+   },
+   {
+    "scenario": "evader_1",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.6031905306759373
+   },
+   {
+    "scenario": "evader_2",
+    "quiet": false,
+    "family": "evader",
+    "s": 1.0
+   },
+   {
+    "scenario": "ignition_0",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.0
+   },
+   {
+    "scenario": "ignition_1",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.2123431179750775
+   },
+   {
+    "scenario": "ignition_2",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.31869219372869206
+   },
+   {
+    "scenario": "persona_llm_0",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.7496997746465428
+   },
+   {
+    "scenario": "persona_llm_1",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.48891461356642163
+   },
+   {
+    "scenario": "persona_llm_2",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.0
+   },
+   {
+    "scenario": "vendor_fault_0",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.12762444170525158
+   },
+   {
+    "scenario": "liquidity_withdrawal_0",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 1.0
+   },
+   {
+    "scenario": "misinformation_0",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.9756688305752783
+   },
+   {
+    "scenario": "vendor_fault_1",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.15813610861262128
+   },
+   {
+    "scenario": "liquidity_withdrawal_1",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.8531496223247994
+   },
+   {
+    "scenario": "misinformation_1",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.32742487282024646
+   },
+   {
+    "scenario": "quiet_0",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.37513277404549
+   },
+   {
+    "scenario": "quiet_1",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.21337158618123203
+   },
+   {
+    "scenario": "quiet_2",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.31222070523341805
+   },
+   {
+    "scenario": "quiet_3",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.31681411194495346
+   },
+   {
+    "scenario": "quiet_4",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.10497264143944784
+   },
+   {
+    "scenario": "quiet_5",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.4481924994673181
+   },
+   {
+    "scenario": "quiet_6",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.6903299876376605
+   },
+   {
+    "scenario": "quiet_7",
+    "quiet": true,
+    "family": "quiet",
+    "s": 1.0
+   },
+   {
+    "scenario": "calibrated_bf47b2_0",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.02552390831612997
+   },
+   {
+    "scenario": "calibrated_bf47b2_1",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.0
+   },
+   {
+    "scenario": "hybrid_bf47b2_0",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.35843965396561117
+   },
+   {
+    "scenario": "hybrid_bf47b2_1",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.35843965396561117
+   },
+   {
+    "scenario": "question_0",
+    "quiet": false,
+    "family": "question",
+    "s": 0.3890963852363173
+   },
+   {
+    "scenario": "question_1",
+    "quiet": false,
+    "family": "question",
+    "s": 0.3350594196011589
+   }
+  ],
+  "t_lo": 0.0,
+  "t_hi": 1.0,
+  "clear": 0.0,
+  "throttle": 0.0,
+  "thr_tail": 0.0,
+  "breadth": 0.0,
+  "lift": 0.9178504471100665,
+  "lift_bar": 1.25,
+  "throttle_ok": false,
+  "separable": false,
+  "loo": {
+   "backed": 0.0,
+   "claims": 0,
+   "claim_rate": 0.0,
+   "claim_rate_of_backed": 0.0,
+   "decisions": [
+    {
+     "scenario": "herd_high_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_3",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_4",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_5",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_6",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_7",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_1",
+     "decision": "escalate",
+     "claim": false
+    }
+   ]
+  }
+ },
+ "lead_lag": {
+  "scores": [
+   {
+    "scenario": "herd_high_0",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.13491515588080985
+   },
+   {
+    "scenario": "herd_high_1",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.7516921327838101
+   },
+   {
+    "scenario": "herd_high_2",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 1.0
+   },
+   {
+    "scenario": "herd_mid_0",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.23399816186048797
+   },
+   {
+    "scenario": "herd_mid_1",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.1926703180994653
+   },
+   {
+    "scenario": "herd_mid_2",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.3628489937105884
+   },
+   {
+    "scenario": "herd_low_0",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.0634698726361465
+   },
+   {
+    "scenario": "herd_low_1",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.1338870604176496
+   },
+   {
+    "scenario": "herd_low_2",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.11324878628352832
+   },
+   {
+    "scenario": "mixed_0",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.4552586901643964
+   },
+   {
+    "scenario": "mixed_1",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.23949703963212748
+   },
+   {
+    "scenario": "mixed_2",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.19174455405108065
+   },
+   {
+    "scenario": "rl_emergent_0",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.16206096718332175
+   },
+   {
+    "scenario": "rl_emergent_1",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.2050673648592476
+   },
+   {
+    "scenario": "rl_emergent_2",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.08849136662950378
+   },
+   {
+    "scenario": "evader_0",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.3161900126584485
+   },
+   {
+    "scenario": "evader_1",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.6336657723324772
+   },
+   {
+    "scenario": "evader_2",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.20029948280388854
+   },
+   {
+    "scenario": "ignition_0",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.17252575534692594
+   },
+   {
+    "scenario": "ignition_1",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.17406005983745337
+   },
+   {
+    "scenario": "ignition_2",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.1030934594175534
+   },
+   {
+    "scenario": "persona_llm_0",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.08611025614342731
+   },
+   {
+    "scenario": "persona_llm_1",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.14230613492873953
+   },
+   {
+    "scenario": "persona_llm_2",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.10496369210514664
+   },
+   {
+    "scenario": "vendor_fault_0",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.07173138872364238
+   },
+   {
+    "scenario": "liquidity_withdrawal_0",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.5909629166969252
+   },
+   {
+    "scenario": "misinformation_0",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.08602598063451102
+   },
+   {
+    "scenario": "vendor_fault_1",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.44903546513235737
+   },
+   {
+    "scenario": "liquidity_withdrawal_1",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.6652843150178195
+   },
+   {
+    "scenario": "misinformation_1",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.5904343864667712
+   },
+   {
+    "scenario": "quiet_0",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.13563483357234213
+   },
+   {
+    "scenario": "quiet_1",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.06416081640579532
+   },
+   {
+    "scenario": "quiet_2",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.12434530535982544
+   },
+   {
+    "scenario": "quiet_3",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.13988816121701936
+   },
+   {
+    "scenario": "quiet_4",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.14135223789181128
+   },
+   {
+    "scenario": "quiet_5",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.055577961511365064
+   },
+   {
+    "scenario": "quiet_6",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.18814289604881898
+   },
+   {
+    "scenario": "quiet_7",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.11826657504382011
+   },
+   {
+    "scenario": "calibrated_bf47b2_0",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.10619068879216925
+   },
+   {
+    "scenario": "calibrated_bf47b2_1",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.0
+   },
+   {
+    "scenario": "hybrid_bf47b2_0",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.00872393832492606
+   },
+   {
+    "scenario": "hybrid_bf47b2_1",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.01792493645375321
+   },
+   {
+    "scenario": "question_0",
+    "quiet": false,
+    "family": "question",
+    "s": 0.6931789637474196
+   },
+   {
+    "scenario": "question_1",
+    "quiet": false,
+    "family": "question",
+    "s": 0.3331911652706026
+   }
+  ],
+  "t_lo": 0.0,
+  "t_hi": 0.18814289604881898,
+  "clear": 0.0,
+  "throttle": 0.4090909090909091,
+  "thr_tail": 0.4090909090909091,
+  "breadth": 0.4090909090909091,
+  "lift": 1.30749568917572,
+  "lift_bar": 1.25,
+  "throttle_ok": true,
+  "separable": false,
+  "loo": {
+   "backed": 0.45454545454545453,
+   "claims": 2,
+   "claim_rate": 0.045454545454545456,
+   "claim_rate_of_backed": 0.1,
+   "decisions": [
+    {
+     "scenario": "herd_high_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "evader_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_3",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_4",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_5",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_6",
+     "decision": "auto_throttle",
+     "claim": true
+    },
+    {
+     "scenario": "quiet_7",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_1",
+     "decision": "auto_clear",
+     "claim": true
+    },
+    {
+     "scenario": "hybrid_bf47b2_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "question_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "question_1",
+     "decision": "auto_throttle",
+     "claim": false
+    }
+   ]
+  }
+ },
+ "tail_dependence": {
+  "scores": [
+   {
+    "scenario": "herd_high_0",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.9932417138237672
+   },
+   {
+    "scenario": "herd_high_1",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 0.9784764629065357
+   },
+   {
+    "scenario": "herd_high_2",
+    "quiet": false,
+    "family": "herd_high",
+    "s": 1.0
+   },
+   {
+    "scenario": "herd_mid_0",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.599785678028238
+   },
+   {
+    "scenario": "herd_mid_1",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.6776752266120849
+   },
+   {
+    "scenario": "herd_mid_2",
+    "quiet": false,
+    "family": "herd_mid",
+    "s": 0.5909005658852062
+   },
+   {
+    "scenario": "herd_low_0",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.39110048855927737
+   },
+   {
+    "scenario": "herd_low_1",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.3175649362061087
+   },
+   {
+    "scenario": "herd_low_2",
+    "quiet": false,
+    "family": "herd_low",
+    "s": 0.3292959825665179
+   },
+   {
+    "scenario": "mixed_0",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5225969392021856
+   },
+   {
+    "scenario": "mixed_1",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5513985448666129
+   },
+   {
+    "scenario": "mixed_2",
+    "quiet": false,
+    "family": "mixed",
+    "s": 0.5299401778496363
+   },
+   {
+    "scenario": "rl_emergent_0",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.25233724856151035
+   },
+   {
+    "scenario": "rl_emergent_1",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.38652223120452717
+   },
+   {
+    "scenario": "rl_emergent_2",
+    "quiet": false,
+    "family": "rl_emergent",
+    "s": 0.4333461849387476
+   },
+   {
+    "scenario": "evader_0",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.4296397314681383
+   },
+   {
+    "scenario": "evader_1",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.40365821939474894
+   },
+   {
+    "scenario": "evader_2",
+    "quiet": false,
+    "family": "evader",
+    "s": 0.42828160697339296
+   },
+   {
+    "scenario": "ignition_0",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.3256103476151981
+   },
+   {
+    "scenario": "ignition_1",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.3074675758321325
+   },
+   {
+    "scenario": "ignition_2",
+    "quiet": false,
+    "family": "ignition",
+    "s": 0.29034339742012577
+   },
+   {
+    "scenario": "persona_llm_0",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.6385654442566328
+   },
+   {
+    "scenario": "persona_llm_1",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.6413660113965732
+   },
+   {
+    "scenario": "persona_llm_2",
+    "quiet": false,
+    "family": "persona_llm",
+    "s": 0.0
+   },
+   {
+    "scenario": "vendor_fault_0",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.5385206143896523
+   },
+   {
+    "scenario": "liquidity_withdrawal_0",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.8388666522073469
+   },
+   {
+    "scenario": "misinformation_0",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.853060924524142
+   },
+   {
+    "scenario": "vendor_fault_1",
+    "quiet": false,
+    "family": "vendor_fault",
+    "s": 0.5902991107518188
+   },
+   {
+    "scenario": "liquidity_withdrawal_1",
+    "quiet": false,
+    "family": "liquidity_withdrawal",
+    "s": 0.8485808774895275
+   },
+   {
+    "scenario": "misinformation_1",
+    "quiet": false,
+    "family": "misinformation",
+    "s": 0.8484172134383638
+   },
+   {
+    "scenario": "quiet_0",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.25464834276475345
+   },
+   {
+    "scenario": "quiet_1",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2682591121577449
+   },
+   {
+    "scenario": "quiet_2",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2571579206354786
+   },
+   {
+    "scenario": "quiet_3",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2512530315278901
+   },
+   {
+    "scenario": "quiet_4",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2450282942603072
+   },
+   {
+    "scenario": "quiet_5",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.2714651195967474
+   },
+   {
+    "scenario": "quiet_6",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.232524056640676
+   },
+   {
+    "scenario": "quiet_7",
+    "quiet": true,
+    "family": "quiet",
+    "s": 0.12208358229939197
+   },
+   {
+    "scenario": "calibrated_bf47b2_0",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.4753140487153352
+   },
+   {
+    "scenario": "calibrated_bf47b2_1",
+    "quiet": false,
+    "family": "calibrated_bf47b2",
+    "s": 0.5626238595680794
+   },
+   {
+    "scenario": "hybrid_bf47b2_0",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.46937034042935427
+   },
+   {
+    "scenario": "hybrid_bf47b2_1",
+    "quiet": false,
+    "family": "hybrid_bf47b2",
+    "s": 0.46996766370250626
+   },
+   {
+    "scenario": "question_0",
+    "quiet": false,
+    "family": "question",
+    "s": 0.8576700665646126
+   },
+   {
+    "scenario": "question_1",
+    "quiet": false,
+    "family": "question",
+    "s": 0.87076007499269
+   }
+  ],
+  "t_lo": 0.0,
+  "t_hi": 0.2714651195967474,
+  "clear": 0.0,
+  "throttle": 0.7727272727272727,
+  "thr_tail": 0.7727272727272727,
+  "breadth": 0.7727272727272727,
+  "lift": 2.213863720805404,
+  "lift_bar": 1.25,
+  "throttle_ok": true,
+  "separable": false,
+  "loo": {
+   "backed": 0.8181818181818182,
+   "claims": 2,
+   "claim_rate": 0.045454545454545456,
+   "claim_rate_of_backed": 0.05555555555555555,
+   "decisions": [
+    {
+     "scenario": "herd_high_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_high_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_mid_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "herd_low_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "mixed_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "rl_emergent_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "evader_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "ignition_2",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "persona_llm_2",
+     "decision": "auto_clear",
+     "claim": true
+    },
+    {
+     "scenario": "vendor_fault_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "vendor_fault_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "liquidity_withdrawal_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "misinformation_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_0",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_1",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_2",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_3",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_4",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_5",
+     "decision": "auto_throttle",
+     "claim": true
+    },
+    {
+     "scenario": "quiet_6",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "quiet_7",
+     "decision": "escalate",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "calibrated_bf47b2_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "hybrid_bf47b2_1",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "question_0",
+     "decision": "auto_throttle",
+     "claim": false
+    },
+    {
+     "scenario": "question_1",
+     "decision": "auto_throttle",
+     "claim": false
+    }
+   ]
+  }
+ }
+}

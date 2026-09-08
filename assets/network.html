@@ -1,0 +1,200 @@
+<!doctype html><html><head><meta charset="utf-8">
+<script src="echarts.min.js"></script>
+<style>
+ @font-face{font-family:"IBM Plex Sans";font-weight:400;src:url("fonts/IBMPlexSans-Regular.woff2") format("woff2")}
+ @font-face{font-family:"IBM Plex Sans";font-weight:500;src:url("fonts/IBMPlexSans-Medium.woff2") format("woff2")}
+ @font-face{font-family:"JetBrains Mono";font-weight:400;src:url("fonts/JetBrainsMono-Regular.woff2") format("woff2")}
+ @font-face{font-family:"JetBrains Mono";font-weight:500;src:url("fonts/JetBrainsMono-Medium.woff2") format("woff2")}
+ :root{--bg:#0b0f16;--well:#020306;--s2:#10161f;--line:rgba(148,163,196,.14);--line2:rgba(148,163,196,.30);
+  --text:#e4e9f2;--t2:#97a3b8;--t3:#5d6a80;--amber:#f6b52a;--amber2:#b5821a;--ok:#47d6a3;--bad:#ff5f5f;--info:#6cb5ff;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;--sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif}
+ html,body{margin:0;height:100%;background:var(--bg);color:var(--t2);font:11.5px/1.45 var(--sans);overflow:hidden}
+ body{display:flex;flex-direction:column}
+ #bar{display:flex;gap:4px;padding:4px 6px;flex:0 0 auto;align-items:center;border-bottom:1px solid var(--line)}
+ #bar button{background:transparent;color:var(--t2);border:1px solid var(--line2);padding:0 9px;height:20px;
+  font:500 10px var(--mono);letter-spacing:.06em;cursor:pointer;white-space:nowrap}
+ #bar button.on{color:var(--amber);border-color:var(--amber2);background:rgba(246,181,42,.16)}
+ #bar button:hover{color:var(--text);border-color:rgba(148,163,196,.5)}
+ #bar .gap{width:8px}
+ #bar .sep{width:1px;height:14px;background:var(--line2);margin:0 4px}
+ #stats{display:flex;gap:0;padding:0 6px;flex:0 0 auto;border-bottom:1px solid var(--line);background:var(--s2);
+  overflow:hidden;white-space:nowrap}
+ #stats .kv{padding:4px 12px 4px 0;margin-right:12px;border-right:1px solid var(--line)}
+ #stats .kv:last-child{border-right:0}
+ #stats .k{display:block;font-size:10px;color:var(--t3)}
+ #stats .v{font:500 12.5px var(--mono);color:var(--text);font-variant-numeric:tabular-nums}
+ #stats .v.ok{color:var(--ok)} #stats .v.bad{color:var(--bad)} #stats .v.amber{color:var(--amber)}
+ #main{flex:1;min-height:0;display:flex}
+ #g{flex:1;min-width:0;min-height:0}
+ #insp{flex:0 0 250px;border-left:1px solid var(--line);background:var(--s2);padding:8px 10px;overflow:auto;display:none}
+ #insp.open{display:block}
+ #insp h4{margin:0 0 6px;font:500 11px var(--sans);color:var(--text)}
+ #insp .id{font:500 16px var(--mono);color:var(--text);margin-bottom:2px}
+ #insp .cls{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--t2);margin-bottom:8px}
+ #insp .sw{width:9px;height:9px;display:inline-block}
+ #insp .row{display:flex;justify-content:space-between;gap:8px;padding:3px 0;border-bottom:1px solid var(--line);font-size:11px}
+ #insp .row .n{font:500 11px var(--mono);color:var(--text);font-variant-numeric:tabular-nums}
+ #insp .verdict{margin:8px 0;padding:5px 8px;border:1px solid var(--line2);border-left-width:3px;font-size:11px;color:var(--text)}
+ #insp .verdict.tp{border-color:rgba(71,214,163,.6);color:var(--ok)}
+ #insp .verdict.fn{border-color:var(--bad);color:var(--bad)}
+ #insp .verdict.fp{border-color:var(--amber2);color:var(--amber)}
+ #insp .verdict.tn{border-color:var(--line2);color:var(--t2)}
+ #insp .cap{font-size:10px;color:var(--t3);margin:10px 0 4px}
+ #insp .nb{display:flex;justify-content:space-between;font:11px var(--mono);padding:2px 0;color:var(--t2);cursor:pointer}
+ #insp .nb:hover{color:var(--text)}
+ #insp .nb b{font-weight:500;color:var(--text)}
+ #insp .close{float:right;background:transparent;border:1px solid var(--line2);color:var(--t2);font:500 10px var(--mono);
+  padding:0 7px;height:18px;cursor:pointer}
+ #legend{display:flex;gap:14px;flex-wrap:wrap;padding:4px 8px;flex:0 0 auto;border-top:1px solid var(--line);font-size:10.5px;color:var(--t3)}
+ #legend .it{display:inline-flex;align-items:center;gap:5px}
+ #legend .sq{width:9px;height:9px;background:#3a4459;display:inline-block}
+ #legend .ci{width:9px;height:9px;background:#3a4459;border-radius:50%;display:inline-block}
+ #legend .rg{box-shadow:0 0 0 2px var(--amber)} #legend .rd{box-shadow:0 0 0 2px var(--bad)}
+ @media (max-width:760px){ #stats{flex-wrap:wrap} #stats .kv.opt{display:none} #stats .kv{margin-right:8px;padding-right:8px} #insp{flex-basis:210px} #legend .it.opt{display:none} }
+ #empty{margin:10px 12px;padding:10px 12px 10px 14px;font-size:11.5px;color:var(--t3);line-height:1.5;border-left:2px solid var(--line2);max-width:62ch}
+</style></head><body>
+<div id="bar"></div>
+<div id="stats"></div>
+<div id="main"><div id="g"></div><div id="insp"></div></div>
+<div id="legend"></div>
+<script>
+const qs = new URLSearchParams(location.search);
+const run = qs.get('run') || '';
+const cmap = {vendor_A:'#b58cff', vendor_B:'#4fc3f7', vendor_C:'#d9b26f', fundamentalist:'#97a3b8',
+              noise_trader:'#3a4459', rl_policy:'#ff9f5a', manipulator:'#ff5f5f', llm_persona:'#5dd6c0'};
+const AMBER='#f6b52a', BAD='#ff5f5f', BG='#0b0f16';
+const $ = id => document.getElementById(id);
+function empty(msg){ $('g').innerHTML = '<div id="empty">'+msg+'</div>'; $('bar').style.display='none'; $('stats').style.display='none'; $('legend').style.display='none'; }
+function f2(x, d){ return (x===undefined||x===null||isNaN(x)) ? 'n/a' : Number(x).toFixed(d===undefined?2:d); }
+function pretty(c){ return String(c).replace('_',' '); }
+
+if(!run){ empty('Awaiting a run. The network of the first herding scenario renders here from the live simulation. Nodes are agents (colour by class, square for ground truth destabilising, amber ring when flagged by the network sentinel); edges are flow correlations above 0.5. Click a node to inspect it.'); }
+else fetch('/run/'+run+'/net.json',{cache:'no-store'}).then(r=>r.json()).then(frames=>{
+ if(!frames || !frames.length){ empty('Network frames appear once the first herding scenario has been simulated.'); return; }
+ const chart = echarts.init($('g'));
+ addEventListener('resize',()=>chart.resize());
+ if(window.ResizeObserver){ new ResizeObserver(()=>chart.resize()).observe($('g')); }
+ const state = {k:0, layout:'force', labels:false, selected:null};
+ const cats = [...new Set(frames[0].nodes.map(n=>n.category))].map(c=>({name:pretty(c),itemStyle:{color:cmap[c]||'#9197a2'}}));
+ const catIdx = {}; cats.forEach((c,i)=>catIdx[c.name]=i);
+
+ function frameStats(f){
+  const tp=f.nodes.filter(n=>n.destab&&n.flagged).length, fp=f.nodes.filter(n=>!n.destab&&n.flagged).length,
+        fn=f.nodes.filter(n=>n.destab&&!n.flagged).length, pos=f.nodes.filter(n=>n.destab).length,
+        flg=f.nodes.filter(n=>n.flagged).length;
+  const prec = flg? tp/flg : null, rec = pos? tp/pos : null;
+  const deg = f.nodes.map(n=>n.degree||0);
+  const hub = f.nodes.reduce((a,n)=>(n.degree||0)>(a.degree||0)?n:a, f.nodes[0]);
+  return {tp,fp,fn,pos,flg,prec,rec,edges:f.links.length,mean:f.mean_abs_corr,hub,
+          maxDeg:Math.max.apply(null,deg)};
+ }
+ function renderStats(f){
+  const s = frameStats(f);
+  const kv = (k,v,cls,opt)=>'<div class="kv'+(opt?' opt':'')+'"><span class="k">'+k+'</span><span class="v '+(cls||'')+'">'+v+'</span></div>';
+  $('stats').innerHTML =
+   kv('window', 'steps '+f.window[0]+' to '+f.window[1], '', true) +
+   kv('edges above 0.5', s.edges, '', true) +
+   kv('mean |corr|', f2(s.mean,3)) +
+   kv('destabilising (truth)', s.pos) +
+   kv('flagged by sentinel', s.flg, 'amber') +
+   kv('correct flags', s.tp, 'ok') +
+   kv('missed', s.fn, s.fn?'bad':'') +
+   kv('false flags', s.fp, s.fp?'bad':'') +
+   kv('precision / recall', (s.prec===null?'n/a':f2(s.prec))+' / '+(s.rec===null?'n/a':f2(s.rec))) +
+   kv('most connected', 'agent '+s.hub.id+' ('+s.maxDeg+' edges)', '', true);
+ }
+ function nodeStyle(n){
+  // amber ring: flagged. red ring: destabilising but missed. no ring otherwise.
+  const missed = n.destab && !n.flagged;
+  return {opacity:0.92, borderColor: n.flagged?AMBER:(missed?BAD:BG), borderWidth: (n.flagged||missed)?2:1};
+ }
+ function option(f){
+  const labelled = n => state.labels && (n.flagged || n.destab);
+  const nodes = f.nodes.map(n=>({id:n.id, name:n.id, category:catIdx[pretty(n.category)],
+     symbolSize:Math.max(4, 3 + 0.625*(n.symbolSize-5)), symbol:n.destab?'rect':'circle',
+     destab:n.destab, flagged:n.flagged, degree:n.degree, mcorr:n.mcorr, mkt:n.mkt, flow_share:n.flow_share, cat:n.category,
+     itemStyle:nodeStyle(n),
+     label:{show:labelled(n), position:'right', fontSize:9, color:'#e4e9f2', fontFamily:'JetBrains Mono,monospace'}}));
+  const links = f.links.map(l=>({source:l.source,target:l.target,value:l.w,
+     lineStyle:{opacity:Math.min(0.9, 0.15+l.w*0.8), width: 0.5 + 1.5*Math.max(0,l.w-0.5)/0.5}}));
+  return {
+   backgroundColor:BG, animationDuration:400,
+   title:{text:f.title, left:12, top:6, textStyle:{color:'#97a3b8',fontSize:10.5,fontWeight:'normal',fontFamily:'JetBrains Mono,ui-monospace,monospace'}},
+   legend:{bottom:6,left:12,textStyle:{color:'#97a3b8',fontSize:10.5,fontFamily:'IBM Plex Sans,sans-serif'},itemWidth:9,itemHeight:9,itemGap:12,data:cats.map(c=>c.name)},
+   tooltip:{backgroundColor:'#10161f',borderColor:'rgba(148,163,196,.30)',textStyle:{color:'#e4e9f2',fontSize:11,fontFamily:'IBM Plex Sans,sans-serif'},
+     formatter:p=>{ if(p.dataType==='edge') return 'agents '+p.data.source+' and '+p.data.target+': |corr| '+f2(p.data.value,3);
+       if(p.dataType!=='node') return '';
+       const d=p.data; return '<b>agent '+d.id+'</b> '+pretty(d.cat)+'<br>'+(d.destab?'destabilising (truth)':'not destabilising')+' / '+(d.flagged?'flagged':'not flagged')+
+         '<br>'+d.degree+' edges above 0.5, market corr '+f2(d.mkt)+'<br><span style="color:#5d6a80">click to inspect</span>'; }},
+   series:[{type:'graph', layout:state.layout, roam:true, selectedMode:'single', top:30, bottom:32, left:12, right:12,
+     circular:{rotateLabel:true},
+     force:{repulsion:90,gravity:0.08,edgeLength:[28,70],friction:0.3},
+     categories:cats, nodes:nodes, links:links,
+     lineStyle:{color:'#3a4459',curveness:state.layout==='circular'?0.35:0},
+     emphasis:{focus:'adjacency', label:{show:true}, lineStyle:{width:2, opacity:1, color:'#6cb5ff'}},
+     select:{itemStyle:{borderColor:'#ffffff', borderWidth:3}, label:{show:true}},
+     blur:{itemStyle:{opacity:0.35}, lineStyle:{opacity:0.06}},
+     label:{formatter:'{b}'}}]};
+ }
+ function show(k){
+  state.k = k;
+  chart.resize();
+  document.querySelectorAll('#bar button.fr').forEach((b,i)=>b.className='fr'+(i===k?' on':''));
+  chart.setOption(option(frames[k]), true);
+  renderStats(frames[k]);
+  if(state.selected!==null) inspect(state.selected);
+ }
+ function inspect(id){
+  const f = frames[state.k]; const n = f.nodes.find(x=>x.id===String(id)); if(!n) return;
+  state.selected = n.id;
+  const nb = f.links.filter(l=>l.source===n.id||l.target===n.id)
+     .map(l=>({other:l.source===n.id?l.target:l.source, w:l.w})).sort((a,b)=>b.w-a.w).slice(0,8);
+  const verdict = n.destab&&n.flagged ? ['tp','Correct: destabilising and flagged'] :
+                  n.destab&&!n.flagged ? ['fn','Missed: destabilising but not flagged'] :
+                  !n.destab&&n.flagged ? ['fp','False flag: not destabilising but flagged'] : ['tn','Not destabilising, not flagged'];
+  const sameClass = f.nodes.filter(x=>x.category===n.category).length;
+  $('insp').innerHTML =
+   '<button class="close" onclick="window.__closeInsp()">close</button><h4>Agent</h4>'+
+   '<div class="id">'+n.id+'</div>'+
+   '<div class="cls"><span class="sw" style="background:'+(cmap[n.category]||'#9197a2')+'"></span>'+pretty(n.category)+' ('+sameClass+' agents in class)</div>'+
+   '<div class="verdict '+verdict[0]+'">'+verdict[1]+'</div>'+
+   '<div class="row"><span>edges above 0.5</span><span class="n">'+(n.degree||0)+'</span></div>'+
+   '<div class="row"><span>mean |corr| with all agents</span><span class="n">'+f2(n.mcorr,3)+'</span></div>'+
+   '<div class="row"><span>flow correlation with market return</span><span class="n">'+f2(n.mkt)+'</span></div>'+
+   '<div class="row"><span>share of gross order flow</span><span class="n">'+(n.flow_share===undefined?'n/a':(100*n.flow_share).toFixed(2)+'%')+'</span></div>'+
+   '<div class="cap">Strongest correlations in this window</div>'+
+   (nb.length? nb.map(x=>'<div class="nb" onclick="window.__inspect(\''+x.other+'\')"><span>agent <b>'+x.other+'</b> '+pretty((f.nodes.find(y=>y.id===x.other)||{}).category||'')+'</span><span>'+f2(x.w,3)+'</span></div>').join('')
+            : '<div class="nb"><span>no edge above 0.5</span></div>') +
+   '<div class="cap">Reading this</div><div style="font-size:10.5px;color:#5d6a80;line-height:1.45">A square is a destabilising agent in the ground truth. An amber ring is the sentinel\u2019s flag. A red ring is a destabilising agent the sentinel missed. Edge width is the strength of the flow correlation.</div>';
+  $('insp').classList.add('open');
+  chart.dispatchAction({type:'unselect', seriesIndex:0, dataIndex:f.nodes.map((x,i)=>i)});
+  const idx = f.nodes.findIndex(x=>x.id===n.id);
+  chart.dispatchAction({type:'select', seriesIndex:0, dataIndex:idx});
+  chart.dispatchAction({type:'highlight', seriesIndex:0, dataIndex:idx});
+  setTimeout(()=>chart.resize(), 30);
+ }
+ window.__inspect = inspect;
+ window.__closeInsp = ()=>{ state.selected=null; $('insp').classList.remove('open'); chart.dispatchAction({type:'unselect', seriesIndex:0, dataIndex:frames[state.k].nodes.map((x,i)=>i)}); chart.dispatchAction({type:'downplay', seriesIndex:0}); setTimeout(()=>chart.resize(), 30); };
+ chart.on('click', p=>{ if(p.dataType==='node') inspect(p.data.id); });
+ chart.getZr().on('click', e=>{ if(!e.target) { window.__closeInsp(); } });
+
+ const bar = $('bar');
+ frames.forEach((f,i)=>{const b=document.createElement('button');b.className='fr';b.textContent=f.title;b.onclick=()=>show(i);bar.appendChild(b);});
+ const sep=document.createElement('span'); sep.className='sep'; bar.appendChild(sep);
+ const bl=document.createElement('button'); bl.textContent='Force'; bl.className='on'; bar.appendChild(bl);
+ const br=document.createElement('button'); br.textContent='Ring by class'; bar.appendChild(br);
+ bl.onclick=()=>{state.layout='force'; bl.className='on'; br.className=''; show(state.k);};
+ br.onclick=()=>{state.layout='circular'; br.className='on'; bl.className=''; show(state.k);};
+ const sep2=document.createElement('span'); sep2.className='sep'; bar.appendChild(sep2);
+ const lb=document.createElement('button'); lb.textContent='Labels'; bar.appendChild(lb);
+ lb.onclick=()=>{state.labels=!state.labels; lb.className=state.labels?'on':''; show(state.k);};
+ $('legend').innerHTML =
+  '<span class="it"><span class="sq"></span>destabilising (truth)</span>'+
+  '<span class="it"><span class="ci"></span>not destabilising</span>'+
+  '<span class="it"><span class="ci rg"></span>flagged by the sentinel</span>'+
+  '<span class="it"><span class="sq rd"></span>destabilising but missed</span>'+
+  '<span class="it opt">edge: flow correlation above 0.5, width by strength</span>'+
+  '<span class="it opt">click a node to inspect; ring layout groups agents by class</span>';
+ show(0);
+}).catch(e=>empty('Network could not be loaded: '+e));
+</script><script>document.addEventListener('keydown', function (e) { var t = e.target; if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) return; if (e.key === 'Escape' || /^[0-9]$/.test(e.key) || /^[kdfasrgh]$/i.test(e.key)) { parent.postMessage({ hslKey: e.key }, '*'); } }, true);</script></body></html>

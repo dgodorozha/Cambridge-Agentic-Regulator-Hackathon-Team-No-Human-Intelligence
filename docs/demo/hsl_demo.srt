@@ -1,0 +1,98 @@
+1
+00:00:00,000 --> 00:00:14,000
+Meet the Herding Scenario Lab. When AI trading agents share the same models they can herd,
+and a small shock becomes a crash. Regulators need to know which surveillance tools would
+catch it and which interventions would contain it, before it happens. This is where they
+find out.
+
+2
+00:00:14,150 --> 00:00:26,630
+Every run begins with the supervisor's real question: would a targeted throttle have
+contained a flash crash with forty per cent of the market on one vendor's model, and which
+surveillance tool deserves certification? The Lab turns that into a test.
+
+3
+00:00:26,780 --> 00:00:36,060
+Next, the data: a file standing in for a venue's order flow, one row per participant per
+minute. It is a synthetic sample; nothing here is confidential.
+
+4
+00:00:36,210 --> 00:00:43,940
+Accepted, fingerprinted, classified, and used to calibrate the simulated markets, so the
+tests reflect your market, not ours.
+
+5
+00:00:44,090 --> 00:00:50,790
+And the first guardrail: a file containing an email address is refused outright. Personal
+data never enters the sandbox.
+
+6
+00:00:50,940 --> 00:01:01,890
+Plan. The Lab builds a battery of markets: strong herds, an evader, colluding agents, a
+faulty vendor model, and the exact case the question asked about, all hashed, so what is
+approved is what runs.
+
+7
+00:01:02,040 --> 00:01:11,190
+Now the human in the loop. Nothing runs without a named approver on the regulator's register
+of authorised persons. This name is not on it: refused, and recorded.
+
+8
+00:01:11,340 --> 00:01:19,210
+R. Ahmed is on the register as an SMF24. He approves the battery, the approval is sealed
+into the ledger, and the run begins.
+
+9
+00:01:19,360 --> 00:01:30,300
+Watch the markets trade: ordinary traders, liquidity providers, agents on shared AI models,
+and one cluster trying to ignite momentum. Eight surveillance tools watch every market as it
+unfolds.
+
+10
+00:01:30,450 --> 00:01:45,310
+On the tape, the shock lands and each tool's first alert shows. Then every intervention rule
+is tried against every herd, and the assurance stages run: a guarantee on false alerts, a
+red team attack on the certified tool, tail risk, time to crash, and a real data backtest.
+
+11
+00:01:45,460 --> 00:01:56,230
+The market as a network. Squares are the agents that really caused the crash; amber rings
+are what the tool flagged; red rings, the ones it missed. You see how good a tool is, not
+just that an alarm went off.
+
+12
+00:01:56,380 --> 00:02:06,600
+Before anyone can release a result, an independent critic recomputes every figure from the
+raw data and replays the audit trail. Twenty eight checks passed; only now is release armed.
+
+13
+00:02:06,750 --> 00:02:14,070
+Every step, approval and refusal is a signed, hash chained ledger entry. A third party can
+replay the run and get the same answer.
+
+14
+00:02:14,220 --> 00:02:22,070
+Seventeen security controls are checked live, from key management to the egress allowlist.
+If one fails, release is blocked.
+
+15
+00:02:22,220 --> 00:02:36,890
+And the finding that matters. By how well it mimics market statistics, the volatility
+trigger comes first. By whether it catches the agents who cause the crash, it comes last.
+That is the decision gap, and it is why the Lab certifies on the decision, with a guarantee
+on false alerts.
+
+16
+00:02:37,040 --> 00:02:40,420
+Gate two. The same registered approver releases the briefing.
+
+17
+00:02:40,570 --> 00:02:52,640
+The briefing answers the question asked, names the certified tool and its guarantee, scores
+every rule on containment and false halts, and ships as an evidence pack with a transparency
+record, ready for a board or a court.
+
+18
+00:02:52,790 --> 00:02:58,020
+And a supervisor can simply ask the run. Herding Scenario Lab, from No Human Intelligence.
+

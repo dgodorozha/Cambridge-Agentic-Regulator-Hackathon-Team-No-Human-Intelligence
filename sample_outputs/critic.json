@@ -1,0 +1,162 @@
+{
+ "ok": true,
+ "checks": [
+  {
+   "name": "summary recomputed from per scenario rows",
+   "ok": true,
+   "detail": "max abs deviation 0.00e+00"
+  },
+  {
+   "name": "fidelity ranking head matches summary",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "decision ranking head matches summary",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "decision gap recomputed from summary",
+   "ok": true,
+   "detail": "gap 0.679, tau -0.357"
+  },
+  {
+   "name": "gap in [0,1]",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "bootstrap P(inversion) in [0,1]",
+   "ok": true,
+   "detail": "P(inversion) 0.90 over 400 resamples"
+  },
+  {
+   "name": "confidence intervals contain point estimates",
+   "ok": true,
+   "detail": "16 intervals checked"
+  },
+  {
+   "name": "intervention rules: arithmetic and no lookahead",
+   "ok": true,
+   "detail": "8 rules checked"
+  },
+  {
+   "name": "autonomy gate bookkeeping and withdrawal rule",
+   "ok": true,
+   "detail": "8 sentinels checked"
+  },
+  {
+   "name": "battery hash matches Gate 1 approval",
+   "ok": true,
+   "detail": "4bf2b1c1e6282df0"
+  },
+  {
+   "name": "held out families scored separately",
+   "ok": true,
+   "detail": "7 held out scenarios"
+  },
+  {
+   "name": "ledger chain replays and verifies",
+   "ok": true,
+   "detail": "798 entries, 798 signed"
+  },
+  {
+   "name": "every number in the briefing appears in the artefacts",
+   "ok": true,
+   "detail": "318 numbers vetted"
+  },
+  {
+   "name": "provenance recorded (code fingerprint, versions, seeds)",
+   "ok": true,
+   "detail": "hsl 3.9.2 code b75c8eccaf69"
+  },
+  {
+   "name": "conformal thresholds recomputed from rows and bound consistent",
+   "ok": true,
+   "detail": "8 sentinels at alpha 0.25"
+  },
+  {
+   "name": "Shapley attribution efficiency (values sum to the drawdown removed)",
+   "ok": true,
+   "detail": "14 scenarios, max residual 5.6e-17"
+  },
+  {
+   "name": "cost frontier endpoints match the raw false alert and miss rates",
+   "ok": true,
+   "detail": "c=0 picks absorption_ratio, c=1 picks naive_threshold"
+  },
+  {
+   "name": "injection suite: every case contained",
+   "ok": true,
+   "detail": "11 of 11 cases contained"
+  },
+  {
+   "name": "truth audit rank correlations in range",
+   "ok": true,
+   "detail": "generators ['shared_signal', 'imitation', 'voter', 'sqrt_impact'], max rank shift 3"
+  },
+  {
+   "name": "adversarial search stayed inside the declared bounds",
+   "ok": true,
+   "detail": "12 trials, 12 dislocating"
+  },
+  {
+   "name": "survival curves monotone and Cox model converged",
+   "ok": true,
+   "detail": "9 arms, 8 sentinels"
+  },
+  {
+   "name": "expected shortfall at least the mean for every rule",
+   "ok": true,
+   "detail": "8 rules"
+  },
+  {
+   "name": "persona policy tables match the hashes bound at planning",
+   "ok": true,
+   "detail": "1 personas"
+  },
+  {
+   "name": "risk measures coherent (ES at least VaR, ES reductions inside their intervals)",
+   "ok": true,
+   "detail": "8 rules at level 0.9"
+  },
+  {
+   "name": "matrix game: mixed value between maximin and minimax, mixture sums to one",
+   "ok": true,
+   "detail": "maximin naive_threshold 0.000, mixed 0.165"
+  },
+  {
+   "name": "learned policy in range and off policy estimates finite",
+   "ok": true,
+   "detail": "9 policies evaluated, mean DR error 0.1549"
+  },
+  {
+   "name": "appraisal recommends the lowest eligible tier",
+   "ok": true,
+   "detail": "1 eligible of 8"
+  },
+  {
+   "name": "datasets carry a hash and an allowed classification; observed windows respect the query set size",
+   "ok": true,
+   "detail": "1 datasets"
+  },
+  {
+   "name": "security posture has no failing control",
+   "ok": true,
+   "detail": "15 pass, 2 warn"
+  },
+  {
+   "name": "backtest bookkeeping (regret identity, rates in range)",
+   "ok": true,
+   "detail": "1 episodes, walk forward present"
+  },
+  {
+   "name": "every number in the transparency record appears in the artefacts",
+   "ok": true,
+   "detail": "all matched"
+  }
+ ],
+ "n_checks": 31,
+ "n_failed": 0
+}

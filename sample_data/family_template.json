@@ -1,0 +1,39 @@
+{
+ "note": "describe the market structure and why it matters",
+ "seeds": 3,
+ "generator": "shared_signal",
+ "vendor_shares": [
+  0.3,
+  0.15
+ ],
+ "vendor_rhos": [
+  0.8,
+  0.3
+ ],
+ "shock_size": 0.05,
+ "shock_time": 300,
+ "n_agents": 120,
+ "t_steps": 600,
+ "frac_fundamental": 0.15,
+ "kappa": 0.015,
+ "sigma": 0.01,
+ "evader_cohorts": 0,
+ "evader_period": 5,
+ "manipulator_share": 0.0,
+ "ignition_time": null,
+ "ignition_len": 8,
+ "ignition_size": 4.0,
+ "persona": "",
+ "persona_share": 0.0,
+ "persona_noise": 0.35,
+ "rl_share": 0.0,
+ "vendor_fault_time": null,
+ "vendor_fault_len": 25,
+ "vendor_fault_signal": -2.0,
+ "liquidity_withdrawal_time": null,
+ "liquidity_withdrawal_scale": 0.3,
+ "false_shock_len": 0,
+ "quiet": false,
+ "holdout": false,
+ "name": "my_family"
+}

@@ -1,0 +1,4 @@
+{"name": "ai_liquidity_provider", "note": "AI market maker: trades toward fundamental, leans against the crowd, withdraws above 2.5 times normal volatility (IMF 2024 liquidity withdrawal channel)",
+ "terms": {"mispricing": -0.8, "crowd": -0.3}, "noise": 0.4, "cap": 3.0, "threshold": 0.0, "lag": 0,
+ "withdraw_if_vol_above": 2.5, "active_from": null, "active_until": null,
+ "burst": {"start": null, "len": 0, "size": 0.0}, "destabilising": "auto"}

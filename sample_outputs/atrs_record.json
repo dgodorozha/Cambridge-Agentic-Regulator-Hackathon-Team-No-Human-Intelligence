@@ -1,0 +1,117 @@
+{
+ "standard": "Algorithmic Transparency Recording Standard (UK), structure of the published template",
+ "status": "draft for the accountable owner's review; not a published record",
+ "run_id": "20260907-160809-0939",
+ "date": "2026-09-07",
+ "hsl_version": "3.9.2",
+ "tier_1": {
+  "name": "Herding Scenario Lab (HSL)",
+  "description": "A decision first sandbox in which a public authority stress tests candidate surveillance sentinels and intervention rules against synthetic AI agent markets and certifies them on decision accuracy rather than aggregate fidelity. Outputs are comparative rankings on a declared scenario battery with intervals; the tool never trades, never touches live market data and never recommends live intervention.",
+  "website_url": "",
+  "contact_email": ""
+ },
+ "tier_2": {
+  "owner_and_responsibility": {
+   "organisation": "",
+   "team": "",
+   "senior_responsible_owner": "R. Ahmed",
+   "senior_responsible_owner_role": "SMF24 Chief Operations",
+   "senior_responsible_owner_register": "SMF24 Chief Operations, reference RXA01234, Authority HR register; FCA Financial Services Register checked 2026-09-01",
+   "record_prepared_by": "D. Godorozha",
+   "record_prepared_by_role": "",
+   "external_supplier_involvement": "None. No external model is configured; every path runs deterministically from the artefacts.",
+   "data_access_processing_or_sharing": "No data leaves the authority's environment; the run is synthetic and self contained."
+  },
+  "description_and_rationale": {
+   "detailed_description": "Version 3.9.2. Each run plans a battery of synthetic markets (51 scenarios in 18 families on this run), simulates them, scores 8 surveillance sentinels on aggregate fidelity and on decision accuracy (which agents are destabilising), scores 8 intervention rules on containment and false halts, and reports the decision gap between the two rankings with a bootstrap probability of inversion, a conformal false alert guarantee, counterfactual attribution, a truth dependence audit, a cost frontier, tail risk and survival measures, a red team and a regulatory options appraisal.",
+   "scope": "Certification of surveillance tools and calibration of intervention rules for agentic herding and market manipulation, in market monitoring, policy design and supervision. Out of scope: live surveillance, enforcement decisions about any firm or person, and any use with real personal or confidential supervisory data.",
+   "benefit": "Replaces certification on aggregate fidelity, which on this run ranks the tools close to the reverse of their decision accuracy (decision gap 0.68, probability of inversion 0.90), with certification on the decision the tool exists to inform, with intervals, a guarantee and a replayable trail.",
+   "previous_process": "Back tests against historical episodes containing almost no agentic herding, and validation of synthetic environments on aggregate statistics.",
+   "alternatives_considered": "Do nothing (the untreated herd is the baseline in every run); monitor and warn without intervention (the non regulatory option in the appraisal); a fixed battery instead of a model planned one (the fixed battery is the fallback whenever no model is configured or its plan fails validation)."
+  },
+  "decision_making_process": {
+   "process_integration": "The tool sits before certification. A policy officer poses a question; the battery is approved at Gate 1 by a named approver; the run executes; the critic verifies; the briefing is released at Gate 2 by a named approver. The briefing is advisory input to a supervisory decision taken by people.",
+   "provided_information": "A ranked evidence graded briefing, the artefacts with intervals, the signed ledger and the evidence pack; on this run the tool certified within the false alert budget is Tail dependence (tail concordance).",
+   "frequency_and_scale_of_usage": "Per policy question; each run is a few minutes on one machine.",
+   "human_decisions_and_review": "Two mandatory human gates with refusal and recorded reasons; four eyes between preparer and approver; an emergency stop that halts execution and seals the partial ledger; the autonomy gate reports how much execution the evidence would back and defaults to none.",
+   "required_training": "Familiarity with the decision gap, the false alert budget, the evidence grades and the limitations section of the briefing; the ASK page answers questions from the artefacts only.",
+   "appeals_and_review": "Every figure is recomputed from per scenario rows by the critic and can be replayed from the evidence pack by a third party; gate refusals and reasons are in the ledger."
+  },
+  "tool_specification": {
+   "system_architecture": "Planner, scenario synthesiser (agent based market simulator with RL traders and distilled LLM personas), sentinels under test, intervention harness, evaluator, attribution, audits, red team, critic, drafter, signed ledger. Pure Python; runs offline.",
+   "phase": "Prototype (hackathon build); pilot with delayed pseudonymised venue data is the next phase.",
+   "maintenance": "Versioned code with a changelog; every run records the software and library versions.",
+   "models": "Tabular Q learning traders; distilled persona policy tables (hashed); eight sentinels (volatility, correlation, network, absorption ratio, imbalance, endogeneity, lead lag, tail dependence); a model based learned intervention policy (advisory).",
+   "software_versions": {
+    "hsl_version": "3.9.2",
+    "python": "3.12.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "platform": "Linux-6.18.44-fc-v24-x86_64-with-glibc2.39"
+   }
+  },
+  "data": {
+   "source_data_name": "Synthetic scenario battery generated by the HSL simulator, plus observed datasets brought through quarantine: labelled_flows.csv (public, sha256 bf47b2157e7df1fd)",
+   "data_modality": "Simulated prices, returns and per agent order flows",
+   "data_description": "51 scenarios, seeds recorded, battery hash 4bf2b1c1e6282df0; generators hybrid, shared_signal.",
+   "data_quantities": "51 runs of up to 600 steps and up to 150 agents",
+   "sensitive_attributes": "None. No personal data, no confidential supervisory information, no proprietary datasets.",
+   "data_completeness_and_representativeness": "Synthetic by design; the battery is anchored to published ranges and includes held out families with a different population; the truth dependence audit reports whether rankings survive a change of generator.",
+   "source_data_url": "",
+   "data_collection": "Generated at run time from recorded seeds.",
+   "data_cleaning": "Not applicable.",
+   "data_sharing_agreements": "None required.",
+   "data_access_and_storage": "Run directory under the authority's control; evidence pack with a manifest."
+  },
+  "risks_mitigations_and_impact_assessments": {
+   "risks": [
+    {
+     "name": "Sim to real gap",
+     "mitigation": "Synthetic only; comparative rankings with intervals, never forecasts; provenance and anchoring recorded."
+    },
+    {
+     "name": "Certification that only holds under one generator",
+     "mitigation": "Truth dependence audit under alternative generators; the briefing states whether rank one survives."
+    },
+    {
+     "name": "False alert budget that is only an estimate",
+     "mitigation": "Conformal threshold with a finite sample guarantee at 0.25 on 8 calibration scenarios."
+    },
+    {
+     "name": "A certified tool an adversary can evade",
+     "mitigation": "Budgeted adversarial search and the sentinel against evader game; robustness margin in the briefing."
+    },
+    {
+     "name": "Prompt injection through model facing surfaces",
+     "mitigation": "Injection suite on every run; 11 of 11 cases contained on this run; the critic requires every case contained."
+    },
+    {
+     "name": "Hallucinated figures in prose",
+     "mitigation": "Every number is computed, not generated; the critic vets every number in the briefing and in this record against the artefacts at printed precision."
+    },
+    {
+     "name": "Overreliance and false confidence",
+     "mitigation": "Evidence grades and limitations in every briefing; named human release; advisory only."
+    },
+    {
+     "name": "Interruption of legitimate participants by a rule",
+     "mitigation": "Burden by participant class, false halt rate, proportionality test in the options appraisal; the appraisal recommends tier 4 (market wide halt)."
+    }
+   ],
+   "impact_assessments": [
+    {
+     "name": "HSL critic report",
+     "description": "Independent checks recomputed from the per scenario rows at release",
+     "date": "2026-09-07",
+     "link": "critic.json in the evidence pack"
+    },
+    {
+     "name": "Ledger replay",
+     "description": "Hash chained, HMAC signed record of every step and gate",
+     "date": "2026-09-07",
+     "link": "ledger.jsonl in the evidence pack"
+    }
+   ]
+  }
+ }
+}

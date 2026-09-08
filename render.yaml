@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: hsl-terminal
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: HSL_SECRET
+        generateValue: true
+      - key: HSL_ASSURANCE
+        value: demo
+      - key: HSL_DEV_MODE
+        value: "on"
+      - key: HSL_REGISTER
+        value: sample_data/register.csv
+      - key: HSL_HOST
+        value: 0.0.0.0
+      - key: HSL_PORT
+        value: "10000"
