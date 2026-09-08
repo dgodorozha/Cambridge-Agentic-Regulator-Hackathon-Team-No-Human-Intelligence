@@ -130,4 +130,6 @@ Optional model providers (Anthropic, OpenAI compatible endpoints, Azure OpenAI, 
 
 Daria Godorozha (LSE, team lead), Prithika Narayanan (LSE, Impact Advantage), Sara Gabrielli Salis (LSE), Rajib Ahmed (Department for Business, Innovation, Science and Trade; Cardiff University; LSE).
 
-Copyright 2026 Team No Human Intelligence. The HSL code is provided for evaluation in the C:\>DIR hackathon; the third party components above remain under their own licences.
+## 6. Licence
+
+The HSL code (everything in this repository other than the third party components listed in section 4) is made available under an **Evaluation Licence**, all rights reserved: the organisers, judges and voters of the C:\>DIR hackathon may view, run and test it to evaluate the submission, and no other right is granted. Copying, redistribution, modification and commercial use require the written consent of the copyright holders. The full text is in `LICENSE`. The third party components remain under their own licences as listed in section 4. Copyright 2026 Team No Human Intelligence.

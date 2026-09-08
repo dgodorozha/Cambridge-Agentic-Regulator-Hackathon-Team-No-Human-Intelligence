@@ -1,0 +1,39 @@
+Evaluation Licence
+
+Copyright 2026 Team No Human Intelligence (Daria Godorozha, Prithika Narayanan,
+Sara Gabrielli Salis, Rajib Ahmed). All rights reserved.
+
+1. Grant. Permission is granted to the organisers, judges and voters of the
+   C:\>DIR Global 'Agentic Regulator' Hackathon (Cambridge Digital Innovation
+   and Regulation Initiative, an initiative of Financial Innovation for Impact)
+   to view, run and test this software, in source form or as deployed at the
+   addresses given in the README, solely for the purpose of evaluating the
+   team's submission to that hackathon.
+
+2. Reservation. No other right is granted. Except as permitted in section 1,
+   the software may not be copied, distributed, published, modified, adapted,
+   incorporated into other work, used to provide a service to third parties,
+   or used for any commercial purpose, without the prior written consent of
+   the copyright holders. Any consent must be obtained from the team through
+   the primary contact named in the hackathon submission.
+
+3. Third party components. The components under assets/ (Apache ECharts,
+   TradingView Lightweight Charts, FINOS Perspective, the IBM Plex Sans,
+   JetBrains Mono and Bedstead typefaces) and the packages installed from
+   requirements.txt and requirements-dev.txt are not covered by this licence
+   and remain under their own licences, listed in the README with the licence
+   files kept beside the vendored assets.
+
+4. Data. All data shipped with the software is synthetic. The register in
+   sample_data/register.csv describes no real person.
+
+5. No warranty. The software is provided as is, without warranty of any kind,
+   express or implied, including fitness for a particular purpose. Nothing in
+   it constitutes regulatory, legal or investment advice, and no output of it
+   is a certification of any surveillance tool or intervention rule for use in
+   a live market.
+
+6. Term. The permission in section 1 lasts for the duration of the hackathon
+   and its judging, and for any period afterwards during which the organisers
+   showcase finalist submissions, and ends when the copyright holders give
+   notice in writing.
