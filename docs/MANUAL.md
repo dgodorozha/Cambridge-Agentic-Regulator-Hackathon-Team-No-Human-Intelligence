@@ -1,5 +1,18 @@
 # Herding Scenario Lab: the manual
 
+## Running a battery: use the demonstration identities
+
+The live prototype at https://hsl-terminal.onrender.com, and any local copy started with `HSL_DEV_MODE=on`, accept two built in identities, so no account and no register entry is needed. On the RUN page enter exactly:
+
+| Field | Value |
+|---|---|
+| Prepared by | `Developer1` |
+| Preparer's function | `Developer1` |
+| Approver at the gates | `Developer2` |
+| Approver's function | `Developer2` |
+
+Then click **Plan**, then **Gate 1: approve battery**, wait for the battery and the critic to finish (a few minutes on the demonstration profile; the phase line under the command bar shows progress), and click **Gate 2: release briefing**, or **Refuse** with a reason. The preparer and the approver must differ (four eyes). Any other names are checked against the register of regulated persons in `sample_data/register.csv`, which also accepts the four team members listed there with their recorded functions (for example approver `Rajib Ahmed`, function `SMF24`); names not on it are refused, by design.
+
 Version 3.9. This manual goes through every feature of the terminal, what each control does, and every quantity the platform measures, with its definition and where it appears. It is written for the people who will use it: market oversight, financial stability and policy teams in a central bank or a securities regulator.
 
 Contents
