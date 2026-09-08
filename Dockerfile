@@ -8,4 +8,4 @@ USER hsl
 ENV HSL_HOST=0.0.0.0 HSL_PORT=8050 HSL_RUNS_DIR=/app/runs HSL_AUTH_MODE=open HSL_LLM=off
 EXPOSE 8050
 HEALTHCHECK --interval=30s --timeout=5s CMD python -c "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8050/healthz')" || exit 1
-CMD gunicorn -w 1 --threads 8 -b 0.0.0.0:${HSL_PORT:-8050} dash_app:server
+CMD gunicorn -w 1 --threads 8 --timeout 300 -b 0.0.0.0:${HSL_PORT:-8050} dash_app:server

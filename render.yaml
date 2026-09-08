@@ -2,7 +2,7 @@ services:
   - type: web
     name: hsl-terminal
     runtime: docker
-    plan: starter
+    plan: standard
     dockerfilePath: ./Dockerfile
     envVars:
       - key: HSL_SECRET
@@ -17,3 +17,5 @@ services:
         value: 0.0.0.0
       - key: HSL_PORT
         value: "10000"
+      - key: HSL_SEEDS
+        value: "2"
