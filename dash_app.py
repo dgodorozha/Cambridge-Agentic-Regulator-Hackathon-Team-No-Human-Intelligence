@@ -1751,6 +1751,29 @@ def _render(_, last_rev):
     if busy and now - _LAST_RENDER["t"] < 3.0:
         raise PreventUpdate
     _LAST_RENDER["t"] = now
+    # each panel group is rebuilt only when the state it reads has changed; while a run is
+    # busy the growing casefile group and the network iframe are also held to a cadence,
+    # because every resend is a full re-render (and a chart reload) in the browser
+    with LOCK:
+        k_rows = (st, rid, S["rows_rev"], id(S["gap"]), id(S["summary"]), id(S["holdout"]))
+        k_eval = (st, rid, id(S["rules"]), id(S["rl"]), id(S["three"]), id(S["aut"]), id(S["artefacts"]),
+                  id(S["assurance"]), len(S["datasets"]))
+        k_static = (st, rid, S["posture"] is not None, len(S["datasets"]))
+        k_net = (rid, S["net_rev"])
+        k_csf = (st, rid, S["rows_rev"])
+
+    def due(name, key, hold):
+        if key == _LAST_RENDER.get(name):
+            return False
+        if busy and now - _LAST_RENDER.get(name + "_t", 0.0) < hold:
+            return False
+        _LAST_RENDER[name] = key
+        _LAST_RENDER[name + "_t"] = now
+        return True
+
+    send_rows, send_eval = due("rows", k_rows, 10.0), due("eval", k_eval, 0.0)
+    send_static, send_net = due("static", k_static, 0.0), due("net", k_net, 20.0)
+    send_csf = due("csf", k_csf, 30.0)
     plan_off = st in ("planning", "running") or busy
     stop_off = st not in ("planning", "running")
     g1_off = st != "planned"
@@ -1760,10 +1783,17 @@ def _render(_, last_rev):
     net = f"/assets/network.html?run={rid or ''}&v={S['net_rev']}"
     chip = f"run {rid}" if rid else ""
     return (_run_status(), plan_off, stop_off, g1_off, g1_off, g2_off, g2r_off,
-            _sectioned(_gap_body(), merge_from=1, merged_label="Sentinels"), _sectioned(_sen_summary()),
-            _sectioned(_int_body()), _aut_body(), _sectioned(_rsk_body()), _dat_list(), _sec_body(),
-            _reg_body(), _ldg_verify(),
-            _csf_body(), csf, net, three is None, chip, _rail(), rev)
+            _sectioned(_gap_body(), merge_from=1, merged_label="Sentinels") if send_rows else no_update,
+            _sectioned(_sen_summary()) if send_rows else no_update,
+            _sectioned(_int_body()) if send_eval else no_update,
+            _aut_body() if send_eval else no_update,
+            _sectioned(_rsk_body()) if send_eval else no_update,
+            _dat_list() if send_eval else no_update,
+            _sec_body() if send_static else no_update,
+            _reg_body() if send_static else no_update,
+            _ldg_verify(),
+            _csf_body() if send_csf else no_update,
+            csf, net if send_net else no_update, three is None, chip, _rail(), rev)
 
 
 @app.callback(Output("sink2", "data"), Input("plan", "n_clicks"),

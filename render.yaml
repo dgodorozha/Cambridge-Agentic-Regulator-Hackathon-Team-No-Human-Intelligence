@@ -20,4 +20,4 @@ services:
       - key: HSL_SEEDS
         value: "2"
       - key: HSL_TICK_PACE
-        value: "0.01"
+        value: "0.005"
